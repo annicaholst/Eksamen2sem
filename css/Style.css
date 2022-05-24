@@ -1,0 +1,753 @@
+/** Eksamen 2. semester MDU: Fryden kaffebar**/
+
+
+/* Adobe fonts */
+/* font-family: costa, sans-serif; font-style: normal; font-weight: 400; */
+@import url("https://use.typekit.net/buo6iyo.css");
+/* font-family: costa, sans-serif; font-style: normal; font-weight: 700; */
+@import url("https://use.typekit.net/buo6iyo.css");
+/* font-family: costa, sans-serif; font-style: normal; font-weight: 300; */
+@import url("https://use.typekit.net/buo6iyo.css");
+/* font-family: Ballare, sans-serif; font-style: normal; font-weight: 400; */
+@import url("https://use.typekit.net/buo6iyo.css");
+
+
+
+/* Variabler gemmes*/
+:root {
+
+/* farver */
+  --yellow: #fff3ce;
+  --aqua: #C9DEDD;
+  --green: #3F5A40;
+  --blue: #1D2472;
+  --red: #CD4F42;
+  --pink: #FFE5E3;
+
+
+/* fonte */
+  --overskrift: 'costa', sans-serif; /* overskrifter */
+  --brødtekst: 'costa', sans-serif; /* brødtekst */
+  --ballare: 'ballare', sans-serif /* */
+}
+
+/* Mobil */
+/* baggrund */
+body {
+  background-color: var(--pink);
+}
+
+
+/* typografi */
+h1{
+  font-family: var(--overskrift);
+  font-weight: 700;
+  text-align: center;
+  padding-top: 15%;
+}
+
+h2{
+  font-family: var(--overskrift);
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10%;
+}
+
+p{
+  font-family: var(--brødtekst);
+  font-weight: 400;
+  text-align: center;
+  margin-left: 12%;
+  margin-right:12%;
+  line-height: 1.8;
+  margin-top: 5%;
+}
+
+.footerp{
+  font-family: var(--brødtekst);
+  font-weight: 400;
+  text-align: center;
+  margin-left: 12%;
+  margin-right:12%;
+  line-height: 0.7;
+  margin-top: 5%;
+}
+
+
+/* Generel opsætning af siderne */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* Navigationsbar mobil */
+header {
+  background-color: var(--aqua);
+}
+
+li {
+  list-style: none;
+}
+
+a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.hamburger{
+  display: block;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  --webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--red);
+}
+
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu{
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: var(--pink);
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.nav-item{
+  margin: 16px 0;
+}
+
+.nav-menu.active{
+  left: 0;
+}
+
+
+
+
+
+/*********** indhold til forsiden  ************/
+
+/* Banner 1 - top menupunkter - Annica*/
+.forsidemenu {
+  font-weight: lighter;
+  padding: 10px;
+}
+
+#topbillede {
+  display: none;
+}
+
+#slangetop {
+  display: none;
+}
+
+#forsidetop a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+#forsidetop a:hover {
+  color: black;
+}
+
+#forsidetop hr {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logotilforsidetop {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 10%;
+}
+
+/* Banner 2 - Om Fryden - Michella*/
+#intro{
+  background-color: var(--green);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+
+#intro h1{
+  color: var(--aqua);
+}
+
+.column-1 img{
+height: 300px;
+
+}
+
+.column-1 p{
+  color: var(--yellow);
+}
+
+/* Clear floats after the columns */
+#intro:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* banner 5: Kaffe af god kvalitet - Michella */
+#kaffe-kvalitet{
+  background-color: var(--yellow);
+}
+
+#kaffe-kvalitet h1{
+  color: var(--red);
+  text-align: center;
+}
+
+#kaffe-kvalitet h4{
+  font-family: Helvetica;
+  color: var(--aqua);
+  font-size: 115px;
+  margin-left: -20px;
+}
+
+#kaffe-kvalitet p{
+  color: var(--blue);
+  text-align: center;
+}
+
+
+/* Forside. Banner 4 styles */
+
+#togokopbanner {
+  background-color: var(--pink);
+}
+
+#togokopbanner p, h1 {
+  color: var(--blue);
+}
+
+#togokopbanner video {
+ margin-top: 10%;
+margin-bottom: 10%;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+#togokopbanner a {
+  font-weight: bold;
+}
+
+.togokopcom {
+  display: none;
+}
+
+
+
+/**** banner 6: nyeste posts ****/
+
+#nyesteposts {
+  background-color: var(--yellow);
+}
+#nyesteposts h1, p {
+  color: var(--blue);
+}
+
+
+
+
+/*********** indhold til om fryden underside ************/
+
+
+/**** banner 1: mød cecilie ****/
+
+#mødcecilie h1 {
+  font-family: var(--ballare);
+  color: var(--blue);
+  font-size: 30px;
+}
+
+#mødcecilie p {
+  color: var(--red);
+}
+
+#hjertebarn {
+  font-weight: bold;
+}
+
+#mødcecilie img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  margin-top: 5%;
+}
+
+#mødceciliecomputer {
+  display:none;
+}
+
+
+/**** banner 2: kort og åbningstider ****/
+
+#kortogtidercomputer {
+  display: none;
+}
+
+#kortogtider {
+  background-color: var(--green);
+
+}
+
+#kortogtider h1 {
+  color: var(--aqua);
+}
+
+#kortogtider p {
+  color: var(--pink);
+}
+
+iframe {
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+}
+
+
+/*********** indhold til produkt underside ************/
+
+#produktside {
+  background-color: var(--pink);
+}
+
+#produktside h1 {
+  color: var(--red);
+}
+
+#produktsidecomputer {
+  display: none;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 250px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides1, .mySlides2, .mySlides3 {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(29, 36, 114, 0.8);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Lokal cirkel, der bevæger sig */
+
+#rundcirkel {
+  background-color: var(--aqua);
+}
+
+#rundcirkel img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.rotate {
+  animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+/* Footer */
+.footer h2{
+  color: var(--blue);
+}
+
+.footer p{
+  color: var(--blue);
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+
+
+
+}
+
+/* Big screen (1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  body {
+    background-color: var(--aqua);
+  }
+
+  section {
+    padding-bottom: 6%;
+  }
+
+  /* typografi */
+  h1{
+    font-family: var(--overskrift);
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 50px;
+    text-align: left;
+    margin-left: 18%;
+  }
+
+  h2{
+    font-family: var(--overskrift);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 6%;
+    text-align: left;
+  }
+
+  p{
+    font-family: var(--brødtekst);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 18%;
+    margin-right:18%;
+    margin-top: 2%;
+    text-align: left;
+  }
+
+  .footerp{
+    font-family: var(--brødtekst);
+    font-weight: 400;
+    text-align: center;
+    margin-left: 12%;
+    margin-right:12%;
+    text-align: left;
+  }
+
+
+
+
+
+/* Navigationsbar styles */
+
+
+header {
+  background-color: var(--pink);
+}
+
+
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+}
+
+
+.nav-link:hover{
+  color: var(--aqua);
+}
+
+.hamburger{
+  display: none;
+}
+
+
+
+
+/* Forside. Banner 1 styles: computer */
+  #topbillede {
+    display: block;
+    margin-left: 11.5%;
+  }
+
+  #forsidetop {
+  display: flex;
+  padding-bottom: 0%;
+  }
+
+  .forsidemenu {
+    font-weight: lighter;
+    padding: 10px;
+    font-size: 30px;
+    margin-left: 20%;
+  }
+
+  #forsidetop hr {
+    max-width: 50%;
+    margin-left: 35%;
+  }
+
+  #forsidetop h1 {
+      text-align: center;
+  }
+
+  .topbilleder {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+
+  #logotilforsidetop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 30%;
+  }
+
+  #slangetop {
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    margin-bottom: 10%;
+  }
+
+
+/* Forside. Banner 4, to go kop: computer */
+
+#togokopbanner {
+  display: flex;
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+#togokopbanner video{
+  min-width: 450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.togokopmobil {
+  display: none;
+}
+
+.togokopcom {
+  display: block;
+  margin-right: 10%;
+  padding-top: 15px;
+}
+
+.togokop {
+  margin-left: 7%;
+}
+
+
+
+
+
+
+/* Underside: Om Fryden. Banner 1 styles: computer */
+
+#mødcecilie {
+  display: none;
+}
+
+#mødceciliecomputer {
+  display: flex;
+}
+
+#mødceciliecomputer h1 {
+  font-family: var(--ballare);
+  color: var(--red);
+}
+
+#mødceciliecomputer p {
+  color: var(--blue);
+}
+
+#mødceciliecomputer img {
+  height: 750px;
+}
+
+/* Underside: Om Fryden. Banner 2 styles: computer */
+
+#kortogtider {
+  display: none;
+}
+
+#kortogtidercomputer {
+  display: flex;
+  background-color: var(--green);
+  padding-left: 5%;
+}
+
+#kortogtidercomputer h1 {
+  color: var(--aqua);
+  margin-top: 5%;
+}
+
+#kortogtidercomputer p {
+  color: var(--pink);
+}
+
+iframe {
+  min-width: 600px;
+  min-height: 600px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kortogtider {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+
+
+/*********** indhold til produkt underside: computer ************/
+
+#slideshowmobil {
+  display: none;
+}
+
+#produktsidecomputer {
+  display: block;
+}
+
+#produktside {
+  background-color: var(--yellow);
+}
+
+#produktside h1 {
+  color: var(--green);
+}
+
+#produkth1 {
+  text-align: center;
+  margin: 0;
+}
+
+.produktbilleder img {
+  max-width: 300px;
+}
+
+.produktbilleder {
+  margin-top: 20px;
+  margin-right: 30px;
+}
+
+
+.produktside {
+  display: flex;
+  margin-left: 18%;
+}
+
+
+  }
+}
