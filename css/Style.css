@@ -585,6 +585,10 @@ padding-right: 5%;
 
 /*********** indhold til mobil kaffekort underside ************/
 
+#kaerlighedforkaffe{
+  background-color: var(--blue);
+}
+
 #kaerlighedforkaffe h1 {
   font-family:  var(--ballare);
   color: var(--red);
@@ -598,8 +602,95 @@ padding-right: 5%;
   margin-top: 5%;
 }
 
+#kaffekortgul{
+  background-color: var(--yellow);
+}
+
+#kaffekortgul h1{
+  color: var(--blue);
+  font-size: 30px;
+  font-family: var(--overskrift);
+}
+
+.webinfographicgul{
+  display: none;
+}
+
+#kaffekortpink {
+  background-color: var(--pink);
+}
+
+#kaffekortpink h1 {
+  color: var(--green);
+  font-size: 30px;
+  font-family: var(--overskrift);
+}
+
+#kaffekortpink p{
+  color: var(--blue);
+  font-size: var(--brødtekst);
+}
+
+.webinfographicpink{
+  display: none;
+}
+
+#kaffekortgron{
+  background-color: var(--green);
+}
+
+.webinfographicgron{
+  display: none;
+}
 
 
+#kaffekortaqua{
+  background-color: var(--aqua);
+}
+
+#kaffekortaqua h1{
+  font-family:  var(--ballare);
+  color: var(--red);
+  font-size: 30px;
+}
+
+#kaffekortaqua p{
+  font-family:  var(--brødtekst);
+  color: var(--blue);
+}
+
+#kaffekortaqua br{
+  color: var(--red);
+  font-family:  var(--brødtekst);
+}
+
+.webinfographicaqua{
+  display: none;
+}
+
+#kaffekortnostalgia{
+  background-color: var(--yellow);
+}
+#kaffekortnostalgia h1{
+  font-family:  var(--overskrift);
+  color: var(--blue);
+  font-size: 30px;
+}
+
+#kaffekortnostalgia p{
+  font-family:  var(--brødtekst);
+  color: var(--green);
+  font-size: 30px;
+}
+
+#kaffekortnostalgia br{
+  font-family:  var(--brødtekst);
+  color: var(--red);
+}
+
+.webmoodcoffee{
+  display: none;
+}
 
 
 
