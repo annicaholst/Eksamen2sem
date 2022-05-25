@@ -82,6 +82,9 @@ p{
   box-sizing: border-box;
 }
 
+section {
+  padding-bottom: 10%;
+}
 
 
 /* Navigationsbar mobil */
@@ -224,42 +227,37 @@ color: var(--aqua);
   color: var(--yellow);
 }
 
-/* banner 3: Kaffe af god kvalitet - Michella */
+/* banner 3: Kaffe af god kvalitet - Michella. Mobil*/
 #kaffe-kvalitet{
   background-color: var(--yellow);
 }
 
+#kaffe-kvalitet h4{
+  color: var(--aqua);
+  font-size: 100px;
+  font-family: signo, sans-serif;
+}
+
 #kaffe-kvalitet h1{
   color: var(--red);
-  text-align: center;
 }
 
-#kaffe-kvalitet h4{
-  font-family: Signo, sans-serif;
-  color: var(--aqua);
-  font-size:137px;
-margin:-10px;
-}
-
-#kaffe-kvalitet p{
-  color: var(--blue);
-  text-align: center;
-}
-
-.to-billeder img{
-  width: 60%;
-  display: block;
+#tobilleder-flex img{
+  height: 350px;
   margin-left: auto;
   margin-right: auto;
-
-}
-#bønner img{
-  margin-top: -15%;
+  margin-top: 10%;
+  display: block;
 }
 
-#hygge-bord img{
-  margin-top: 8%;
+#tekst-flex h1{
+  display: none;
 }
+
+#tekst-flex p{
+  color: var(--blue);
+}
+
 
 
 /* Banner 4: Togo kop */
@@ -281,6 +279,7 @@ margin-bottom: 10%;
 
 #togokopbanner a {
   font-weight: bold;
+  text-decoration: none;
 }
 
 .togokopcom {
@@ -320,7 +319,7 @@ margin-bottom: 10%;
 }
 
 
-/* banner 6: nyeste posts */
+/* banner 6: nyeste posts - mobil */
 
 #nyesteposts {
   background-color: var(--yellow);
@@ -329,10 +328,34 @@ margin-bottom: 10%;
   color: var(--blue);
 }
 
+#nyesteposts a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+#nyesteposts a:hover {
+  color: var(--aqua);
+}
+
+.instabillede img {
+  max-width: 150px;
+  padding: 7%;
+  margin-left: 25%;
+}
+
+.nyesteinsta {
+  display: flex;
+}
+
+.instacommi {
+  display: none;
+}
+
 /*** Footer ***/
 footer{
-background-color: var(--aqua);
-color: var(--blue);
+  background-color: var(--aqua);
+  color: var(--blue);
 }
 
 .cirkel-ikon img{
@@ -360,19 +383,20 @@ display: block;
 }
 
 .flex-some img{
-  height: 70px;
+  height: 50px;
   margin-top: 20px;
 }
+
 
 /* copyright nederst på siden */
 .footer-banner {
   background-color: var(--blue);
-  color: var(--aqua);
   height: 45px;
 }
 
 .bannerp{
   padding-top: 8px;
+  color: var(--aqua);
 }
 
 
@@ -436,36 +460,32 @@ iframe {
 }
 
 /* Underside - om fryden. Banner 3: Lokale råvarer */
-#omfryden {
-background-color: var(--yellow);
-}
-
 #omfryden h4{
-  font-family: Signo, sans-serif;
   color: var(--aqua);
-  font-size:112px;
-  margin:-10px;
+  font-size: 110px;
+  font-family: signo, sans serif;
+}
+.overskrift-flex {
+  margin-top: -15%;
 }
 
-.column-3 img{
-  margin-top: 10%;
-  height: 350px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.column-3 h1{
+.overskrift-flex h1{
 color: var(--red);
-padding-left: 5%;
-padding-right: 5%;
 }
 
-.column-4 h1{
+.overskrift-flex img{
+  margin-top: 10%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.teksten-flex h1{
   display: none;
 }
 
-.column-4 p{
+.teksten-flex p{
   color: var(--blue);
 }
 
@@ -479,9 +499,11 @@ padding-right: 5%;
   color: var(--red);
 }
 
+
 #produktsidecomputer {
   display: none;
 }
+
 
 
 * {box-sizing:border-box}
@@ -493,12 +515,12 @@ padding-right: 5%;
   margin: auto;
 }
 
-/* Hide the images by default */
+/* Hide the images by default*/
 .mySlides1, .mySlides2, .mySlides3 {
   display: none;
 }
 
-/* Next & previous buttons */
+/* Next & previous buttons*/
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -514,19 +536,19 @@ padding-right: 5%;
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/* Position the "next button" to the right*/
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a background color with a little bit see-through */
+/* On hover, add a background color with a little bit see-through*/
 .prev:hover, .next:hover {
   background-color: rgba(29, 36, 114, 0.8);
 }
 
 
-/* The dots/bullets/indicators */
+/* The dots/bullets/indicators*/
 .dot {
   cursor: pointer;
   height: 15px;
@@ -542,7 +564,7 @@ padding-right: 5%;
   background-color: #717171;
 }
 
-/* Fading animation */
+/* Fading animation*/
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -554,6 +576,202 @@ padding-right: 5%;
 }
 
 
+
+
+
+/*********** indhold til mobil kaffekort underside ************/
+
+/** kærlighed for kaffe boks **/
+.mobilkaerlighedforkaffe{
+  background-color: var(--pink);
+}
+
+#kaerlighedforkaffe h1{
+  color: var(--red);
+  font-size: 30px;
+  font-family: var(--ballare);
+}
+
+.mobilkaerlighedforkaffe p{
+  color: var(--blue);
+  font-family: var(--brødtekst);
+}
+
+#b {
+  font-weight: bold;
+  color: var(--red);
+}
+
+.mobilkaerlighedforkaffe img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  margin-top: 5%;
+}
+
+.webkaerlighedforkaffe{
+  display: none;
+}
+
+/** Gul boks **/
+#kaffekortgul{
+  background-color: var(--yellow);
+}
+
+#kaffekortgul h1{
+  color: var(--red);
+  font-size: 25px;
+  font-family: var(--overskrift);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+.mobilinfographicgul img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  margin-top: 5%;
+}
+
+.webinfographicgul{
+  display: none;
+}
+
+/** Pink boks **/
+#kaffekortpink {
+  background-color: var(--pink);
+}
+
+#kaffekortpink h1 {
+  color: var(--blue);
+  font-size: 30px;
+  font-family: var(--overskrift);
+}
+
+#kaffekortpink p{
+  color: var(--red);
+  font-size: var(--brødtekst);
+}
+
+.mobilinfographicpink img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  margin-top: 5%;
+}
+
+.webinfographicpink{
+  display: none;
+}
+
+/** Grøn boks **/
+#kaffekortgron{
+  background-color: var(--green);
+}
+
+.mobilinfographicgron img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  margin-top: 5%;
+}
+
+.webinfographicgron{
+  display: none;
+}
+
+/** Aqua boks**/
+#kaffekortaqua{
+  background-color: var(--aqua);
+}
+
+#kaffekortaqua b{
+  font-family: var(--brødtekst);
+  color: var(--red);
+  text-align: center;
+}
+
+#kaffekortaqua h1{
+  font-family:  var(--ballare);
+  color: var(--red);
+  font-size: 30px;
+}
+
+#kaffekortaqua p{
+  font-family:  var(--brødtekst);
+  color: var(--blue);
+}
+
+#kaffekortaqua img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  margin-top: 5%;
+}
+
+#webinfographicaqua{
+  display: none;
+}
+
+/** Gul boks Nostalgia **/
+#kaffekortnostalgia{
+  background-color: var(--yellow);
+  text-align: center;
+}
+
+#kaffekortnostalgia b{
+  font-family: var(--brødtekst);
+  color: var(--red);
+}
+
+#kaffekortnostalgia h1{
+  font-family:  var(--overskrift);
+  color: var(--blue);
+  font-size: 30px;
+}
+
+#kaffekortnostalgia p{
+  font-family: var(--brødtekst);
+  color: var(--green);
+}
+
+#kaffekortnostalgia img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+  margin-top: 5%;
+}
+
+b{
+  font-family: var(--brødtekst);
+  font-weight: bold;
+  color: var(--red);
+}
+
+
+#webmoodcoffee{
+  display: none;
+}
+
+
+/* Footer */
+.footer h2{
+  color: var(--blue);
+}
+
+.footer p{
+  color: var(--blue);
+}
+}
+
+
 /* Lokal cirkel, der bevæger sig */
 
 #rundcirkel {
@@ -561,9 +779,11 @@ padding-right: 5%;
 }
 
 #rundcirkel img{
+  padding-top: 2%;
   display: block;
   margin-right: auto;
   margin-left: auto;
+  min-width: 200px;
 }
 
 .rotate {
@@ -580,138 +800,22 @@ padding-right: 5%;
 }
 
 
+/* 404 side */
 
-
-
-/*********** indhold til mobil kaffekort underside ************/
-
-#kaerlighedforkaffe{
-  background-color: var(--blue);
+#mobil404 {
+  display: block;
 }
 
-#kaerlighedforkaffe h1 {
-  font-family:  var(--ballare);
-  color: var(--red);
-  font-size: 30px;
-}
-
-.boxkaffebillede{
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 70%;
-  margin-top: 5%;
-}
-
-#kaffekortgul{
-  background-color: var(--yellow);
-}
-
-#kaffekortgul h1{
-  color: var(--blue);
-  font-size: 30px;
-  font-family: var(--overskrift);
-}
-
-.webinfographicgul{
+#commi404 {
   display: none;
 }
 
-#kaffekortpink {
-  background-color: var(--pink);
-}
-
-#kaffekortpink h1 {
-  color: var(--green);
-  font-size: 30px;
-  font-family: var(--overskrift);
-}
-
-#kaffekortpink p{
-  color: var(--blue);
-  font-size: var(--brødtekst);
-}
-
-.webinfographicpink{
-  display: none;
-}
-
-#kaffekortgron{
-  background-color: var(--green);
-}
-
-.webinfographicgron{
-  display: none;
-}
-
-
-#kaffekortaqua{
-  background-color: var(--aqua);
-}
-
-#kaffekortaqua h1{
-  font-family:  var(--ballare);
-  color: var(--red);
-  font-size: 30px;
-}
-
-#kaffekortaqua p{
-  font-family:  var(--brødtekst);
-  color: var(--blue);
-}
-
-#kaffekortaqua br{
-  color: var(--red);
-  font-family:  var(--brødtekst);
-}
-
-.webinfographicaqua{
-  display: none;
-}
-
-#kaffekortnostalgia{
-  background-color: var(--yellow);
-}
-#kaffekortnostalgia h1{
-  font-family:  var(--overskrift);
-  color: var(--blue);
-  font-size: 30px;
-}
-
-#kaffekortnostalgia p{
-  font-family:  var(--brødtekst);
-  color: var(--green);
-  font-size: 30px;
-}
-
-#kaffekortnostalgia br{
-  font-family:  var(--brødtekst);
-  color: var(--red);
-}
-
-.webmoodcoffee{
-  display: none;
-}
-
-
-
-
-
-
-
-
-
-/* Footer */
-.footer h2{
-  color: var(--blue);
-}
-
-.footer p{
-  color: var(--blue);
-}
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
+
+
 }
 
 /* Big screen (1200px and up) */
@@ -734,6 +838,7 @@ padding-right: 5%;
     font-size: 50px;
     text-align: left;
     margin-left: 18%;
+    margin-right: 18%;
   }
 
   h2{
@@ -813,7 +918,7 @@ header {
     font-weight: lighter;
     padding: 10px;
     font-size: 30px;
-    margin-left: 20%;
+    margin-left: 35%;
   }
 
   #forsidetop hr {
@@ -877,7 +982,47 @@ header {
   display: block;
   }
 
-/* Forside. Banner 4: to go kop: computer */
+/* Forside. banner 3: Kaffe af god kvalitet - Michella. Computer */
+#kaffe-kvalitet h1{
+  display: none;
+  margin-top: -5%;
+}
+
+#kaffe-kvalitet h4{
+  color: var(--aqua);
+  font-size: 450px;
+  font-family: signo, sans-serif;
+}
+
+#tobilleder-flex {
+  display: flex;
+  flex-direction: row;
+  margin-top: -27%;
+}
+
+#tobilleder-flex img{
+  height: 400px;
+}
+
+#kaffebillede1 {
+  padding-left: 20%;
+}
+
+#kaffebillede2 {
+  padding-right: 20%;
+}
+
+#tekst-flex h1{
+  display: block;
+  text-align: center;
+}
+
+#tekst-flex p{
+  text-align: center;
+}
+
+
+/* Forside. Annica. Banner 4: to go kop: computer */
 
 #togokopbanner {
   display: flex;
@@ -913,6 +1058,26 @@ header {
   width: 50%;
   padding: 5px;
 }
+
+
+/* Forside. banner 7: nyeste posts - Annica. Computer */
+
+.nyesteinsta {
+  display: none;
+}
+
+.instacommi {
+  display: flex;
+  margin-left: 16%;
+  margin-right: 16%;
+  margin-top: 20px;
+}
+
+.instacommi img {
+  min-width: 250px;
+}
+
+
 
 /*** Footer ***/
 footer{
@@ -960,6 +1125,13 @@ font-size: 15px;
 padding-top: 8px;
 text-align: center;
   }
+
+/* lokalcirkel, der drejer rundt */
+
+#rundcirkel img {
+  min-width: 350px;
+}
+
 
 
 
@@ -1023,6 +1195,37 @@ iframe {
   margin-top: 5%;
 }
 
+/* underside om fryden. Banner 3:Lokalt */
+#omfryden {
+background-color: var(--yellow);
+display: flex;
+flex-direction: row;
+}
+
+#omfryden h4{
+  display: none;
+}
+.overskrift-flex {
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.overskrift-flex h1{
+  display: none;
+}
+
+.overskrift-flex img{
+  height: 600px;
+}
+
+.teksten-flex{
+  margin-top: 5%;
+  margin-right: 10%;
+}
+
+.teksten-flex h1{
+  display: block;
+  color: var(--red);
+}
 
 
 /*********** indhold til produkt underside: computer ************/
@@ -1064,11 +1267,161 @@ iframe {
 }
 
 /*********** indhold til kaffekort underside: computer ************/
+/** Kærlighed for kaffe boks **/
+.mobilkaerlighedforkaffe{
+  display: none;
+}
+
+.webkaerlighedforkaffe{
+  display: contents;
+}
+
+.webkaerlighedforkaffe img{
+width: 100%;
+text-align: center;
+margin: auto;
+}
+
 #kaerlighedforkaffe h1 {
   font-family:  var(--ballare);
   color: var(--red);
-  font-size: 30px;
+  font-size: 50px;
+  margin-left: 20%;
+}
+
+.webkaerlighedforkaffe p{
+  color: var(--green);
+  font-family: var(--brødtekst);
+  text-align: center;
+}
+
+#fed{
+  font-weight: bold;
+  color: var(--red);
+}
+
+.webinfographicgul{
+  display: flex;
+}
+
+.mobilinfographicgul{
+  display: none;
+}
+
+.webinfographicgul img{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/** Gul boks **/
+#kaffekortgul h1{
+  color: var(--blue);
+  margin-left: 15%;
+  margin-bottom: 2%;
+  font-size: 40px;
+}
+/** Pink boks */
+.mobilinfographicpink{
+  display: none;
+}
+
+.webinfographicpink{
+  display: block;
+  text-align: center;
+}
+
+#kaffekortpink h1{
+  font-size: 50px;
+  margin-left: 30%;
+}
+
+.webinfographicpink p{
+  text-align: center;
+}
+
+.webinfographicpink img{
+  width: 70%;
+  margin: auto;
+}
+
+/** Grøn boks */
+.mobilinfographicgron{
+  display: none;
+}
+
+.webinfographicgron{
+  display: flex;
+}
+
+.webinfographicgron img{
+  width: 70%;
+  margin: auto;
+  padding-top: 2%;
+}
+
+/* Aqua boks */
+#kaffekortaqua{
+  display: none;
+}
+
+#webinfographicaqua{
+  display: flex;
+}
+
+#webinfographicaqua h1{
+  font-family: var(--ballare);
+  color: var(--red);
+}
+
+#webinfographicaqua p{
+  color: var(--blue);
+}
+
+#webinfographicaqua b{
+  font-family: var(--brødtekst);
+  color: var(--red);
+}
+
+#webinfographicaqua img{
+  height: 750px;
+  margin-top: 10%;
+}
+
+/* Gul boks Nostalgia*/
+#kaffekortnostalgia{
+  display: none;
+}
+
+#webmoodcoffee{
+  display: flex;
+  background-color: var(--yellow);
+}
+
+#webmoodcoffee img{
+  height: 750px;
+  width: 600px;
+}
+
+#bold{
+  font-weight: bold;
+  color: var(--red);
+  font-family: var(--brødtekst);
 }
 
   }
+
+
+  /* 404 side */
+
+  #mobil404 {
+    display: none;
+  }
+
+  #commi404 {
+    display: block;
+  }
+
+
 }
