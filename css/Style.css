@@ -87,6 +87,8 @@ section {
 }
 
 
+
+
 /* Navigationsbar mobil */
 
 header{
@@ -260,7 +262,7 @@ color: var(--aqua);
 
 
 
-/* Banner 4: Togo kop */
+/* Banner 4: Togo kop mobil. Annica*/
 #togokopbanner {
   background-color: var(--pink);
 }
@@ -275,11 +277,18 @@ margin-bottom: 10%;
  display: block;
  margin-left: auto;
  margin-right: auto;
+ width: 300px;
 }
 
 #togokopbanner a {
   font-weight: bold;
   text-decoration: none;
+  color: var(--blue);
+}
+
+
+#togokopbanner a:hover {
+  color: var(--aqua);
 }
 
 .togokopcom {
@@ -400,8 +409,8 @@ display: block;
 }
 
 
-/*********** indhold til om fryden underside ************/
-/* Underside - om fryden. banner 1: mød cecilie */
+/*********** indhold til om fryden underside: mobil************/
+/* Underside - om fryden. banner 1: mød cecilie. Mobil */
 
 #mødcecilie h1 {
   font-family: var(--ballare);
@@ -413,7 +422,7 @@ display: block;
   color: var(--red);
 }
 
-#hjertebarn {
+.hjertebarn {
   font-weight: bold;
 }
 
@@ -430,7 +439,7 @@ display: block;
 }
 
 
-/* Underside - om fryden. banner 2: kort og åbningstider */
+/* Underside - om fryden. banner 2: kort og åbningstider. Mobil */
 
 #kortogtidercomputer {
   display: none;
@@ -450,8 +459,8 @@ display: block;
 }
 
 iframe {
-  max-width: 250px;
-  max-height: 250px;
+  min-width: 250px;
+  min-height: 270px;
   border-radius: 50%;
   display: block;
   margin-left: auto;
@@ -909,6 +918,10 @@ header {
     margin-left: 11.5%;
   }
 
+  #topbillede img {
+    min-height: 750px;
+  }
+
   #forsidetop {
   display: flex;
   padding-bottom: 0%;
@@ -951,6 +964,7 @@ header {
     top: 20px;
     left: 10px;
     margin-bottom: 10%;
+    width: 630px;
   }
 
   /* Forside. Banner 2: Om Fryden - Michella*/
@@ -1035,6 +1049,7 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20%;
 }
 
 .togokopmobil {
