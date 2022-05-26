@@ -92,7 +92,7 @@ section {
 /* Navigationsbar mobil */
 
 header{
-  background-color: var(--aqua);
+  background-color: #c9dedd;
 }
 
 .nav-link{
@@ -114,12 +114,12 @@ header{
 }
 
 .nav-menu{
+
   position: fixed;
   left: -100%;
   top: 70px;
   gap: 0;
   flex-direction: column;
-  background-color: ;
   width: 100%;
   text-align: center;
   transition: 0.3s;
@@ -148,6 +148,7 @@ header{
 
 .nav-menu.active{
   left: 0;
+  background-color: rgba(201, 222, 221, 0.9); /*aqua med en smule opacitet*/
 }
 
 .hamburger.active .bar:nth-child(2){
@@ -218,7 +219,7 @@ header{
 }
 
 .column-1 h1{
-color: var(--aqua);
+color:var(--aqua);
 }
 
 .column-2 h1{
@@ -537,7 +538,7 @@ color: var(--red);
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: var(--blue);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -553,7 +554,7 @@ color: var(--red);
 
 /* On hover, add a background color with a little bit see-through*/
 .prev:hover, .next:hover {
-  background-color: rgba(29, 36, 114, 0.8);
+  background-color: rgba(29, 36, 114, 0.3);
 }
 
 
@@ -824,6 +825,225 @@ b{
 @media only screen and (min-width: 768px) {
 
 
+  /* Forside. Banner 1: ipad. Annica */
+    #topbillede {
+      display: block;
+      margin-left: 11.5%;
+    }
+
+    #topbillede img {
+      max-height: 458px;
+    }
+
+    #forsidetop {
+    display: flex;
+    padding-bottom: 0%;
+    }
+
+    .forsidemenu {
+      font-weight: lighter;
+      padding: 10px;
+      font-size: 30px;
+      margin-left: 30%;
+    }
+
+    #forsidetop hr {
+      max-width: 50%;
+      margin-left: 40%;
+    }
+
+    #forsidetop h1 {
+        text-align: center;
+    }
+
+    .topbilleder {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-top: 10%;
+      margin-left: 10%;
+    }
+
+    #logotilforsidetop {
+      position: block;
+      margin-left: 35%;
+    }
+
+    #slangetop {
+      display: none;
+    }
+
+
+
+    /* Forside. banner 7: nyeste posts - Annica. Ipad*/
+
+    .nyesteinsta {
+      display: none;
+    }
+
+    .instacommi {
+      display: flex;
+      margin-left: 8%;
+      margin-right: 10%;
+      margin-top: 20px;
+    }
+
+    .instacommi img {
+      max-width: 150px;
+    }
+
+  /*********** indhold til Om Fryden underside: ipad.************/
+
+  /* Underside. Om Fryden. Banner 1 styles: computer. */
+
+  #mødcecilie {
+    display: none;
+  }
+
+  #mødceciliecomputer {
+    display: flex;
+    margin-right: 5%;
+  }
+
+  #mødceciliecomputer h1 {
+    font-family: var(--ballare);
+    color: var(--red);
+  }
+
+  #mødceciliecomputer p {
+    color: var(--blue);
+  }
+
+  #mødceciliecomputer img {
+    height: 350px;
+    margin-top: 40%;
+  }
+
+  /* Underside: Om Fryden. Banner 2 styles: computer */
+
+  #kortogtider {
+    display: none;
+  }
+
+  #kortogtidercomputer {
+    display: flex;
+    background-color: var(--green);
+    padding-left: 5%;
+  }
+
+  #kortogtidercomputer h1 {
+    color: var(--aqua);
+    margin-top: 5%;
+  }
+
+  #kortogtidercomputer p {
+    color: var(--pink);
+  }
+
+  iframe {
+    min-width: 400px;
+    min-height: 400px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .kortogtider {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+
+  /*********** indhold til produkt underside: ipad. Annica ************/
+
+  #slideshowmobil {
+    display: none;
+  }
+
+  #produktsidecomputer {
+    display: block;
+  }
+
+  #produktside {
+    background-color: var(--yellow);
+  }
+
+  #produktside h1 {
+    color: var(--green);
+  }
+
+  #produkth1 {
+    text-align: center;
+    margin: 0;
+  }
+
+  .produktbilleder img {
+    max-width: 200px;
+  }
+
+  .produktbilleder {
+    margin-top: 20px;
+    margin-right: 30px;
+  }
+
+
+  .produktside {
+    display: flex;
+    margin-left: 10%;
+  }
+
+
+
+
+  /*** Footer ***/
+  footer{
+    background-color: var(--aqua);
+    color: var(--blue);
+  }
+
+  .footerp{
+    line-height: 1.2;
+  }
+
+
+  .flex-container-footer{
+  display: flex;
+  }
+
+  .flex-container-footer h2{
+  text-align: center;
+  padding-bottom: 15px;
+  }
+
+  .flex-some, .flex-kontakt,.flex-tider {
+    margin-left: -8%;
+    margin-right: -8%
+    padding: -1%;
+
+  }
+
+  .flex-some img{
+  max-height: 50px;
+  margin-top: 20px;
+  }
+
+
+  /* copyright nederst på siden */
+  .bannerp{
+  font-size: 15px;
+  padding-top: 8px;
+  text-align: center;
+    }
+
+  /* lokalcirkel, der drejer rundt */
+
+  #rundcirkel img {
+    min-width: 250px;
+  }
+
 
 }
 
@@ -912,7 +1132,7 @@ header {
 
 
 
-/* Forside. Banner 1: computer */
+/* Forside. Banner 1: computer. Annica*/
   #topbillede {
     display: block;
     margin-left: 11.5%;
@@ -1083,7 +1303,7 @@ header {
 
 .instacommi {
   display: flex;
-  margin-left: 16%;
+  margin-left: 12.5%;
   margin-right: 16%;
   margin-top: 20px;
 }
@@ -1094,63 +1314,7 @@ header {
 
 
 
-/*** Footer ***/
-footer{
-  background-color: var(--aqua);
-  color: var(--blue);
-}
-
-.footerp{
-  line-height: 1.2;
-}
-
-.cirkel-ikon img{
-width: 20%;
-padding-top: 7%;
-margin-left: auto;
-margin-right: auto;
-display: block;
-}
-
-.flex-container-footer{
-display: flex;
-padding-left: 15%;
-padding-right: 15%;
-justify-content: space-between;
-}
-
-.flex-container-footer h2{
-text-align: center;
-padding-bottom: 15px;
-}
-
-.flex-some {
-padding: 0;
-}
-
-.flex-some img{
-height: 70px;
-margin-top: 20px;
-}
-
-
-/* copyright nederst på siden */
-.bannerp{
-font-size: 15px;
-padding-top: 8px;
-text-align: center;
-  }
-
-/* lokalcirkel, der drejer rundt */
-
-#rundcirkel img {
-  min-width: 350px;
-}
-
-
-
-
-/* Underside. Om Fryden. Banner 1 styles: computer */
+/* Underside. Om Fryden. Banner 1 styles: computer. */
 
 #mødcecilie {
   display: none;
@@ -1210,7 +1374,7 @@ iframe {
   margin-top: 5%;
 }
 
-/* underside om fryden. Banner 3:Lokalt */
+/* underside om fryden. Banner 3:Lokalt. Computer. */
 #omfryden {
 background-color: var(--yellow);
 display: flex;
@@ -1436,6 +1600,61 @@ margin: auto;
 
   #commi404 {
     display: block;
+  }
+
+
+
+  /*** Footer ***/
+  footer{
+    background-color: var(--aqua);
+    color: var(--blue);
+  }
+
+  .footerp{
+    line-height: 1.2;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .flex-container-footer{
+  display: flex;
+  padding-left: 15%;
+  padding-right: 15%;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  }
+
+  .flex-container-footer h2{
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 22px;
+
+  }
+
+  .flex-some {
+  padding: 0;
+  }
+
+  .flex-some img{
+  min-height: 70px;
+  margin-top: 20px;
+  }
+
+  .flex-tider {
+    margin-right: -5%;
+  }
+
+  /* copyright nederst på siden */
+  .bannerp{
+  font-size: 15px;
+  padding-top: 8px;
+  text-align: center;
+    }
+
+  /* lokalcirkel, der drejer rundt */
+
+  #rundcirkel img {
+    min-width: 350px;
   }
 
 
