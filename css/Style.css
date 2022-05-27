@@ -1,5 +1,5 @@
 /** Eksamen 2. semester MDU: Fryden kaffebar**/
-
+/** Style css for Frydens Kaffebars hjemmeside**/
 
 /* Adobe fonts */
 /* font-family: costa, sans-serif; font-style: normal; font-weight: 400; */
@@ -88,11 +88,14 @@ section {
 
 
 
-
 /* Navigationsbar mobil */
 
 header{
-  background-color: #c9dedd;
+  background-color: var(--aqua);
+}
+
+.nav-menu1{
+  display: none;
 }
 
 .nav-link{
@@ -114,12 +117,12 @@ header{
 }
 
 .nav-menu{
-
   position: fixed;
   left: -100%;
   top: 70px;
   gap: 0;
   flex-direction: column;
+  background-color: rgba(201, 222, 221, 0.9);
   width: 100%;
   text-align: center;
   transition: 0.3s;
@@ -148,7 +151,7 @@ header{
 
 .nav-menu.active{
   left: 0;
-  background-color: rgba(201, 222, 221, 0.9); /*aqua med en smule opacitet*/
+  background-color: rgba(201, 222, 221, 0.9);
 }
 
 .hamburger.active .bar:nth-child(2){
@@ -164,8 +167,9 @@ header{
 }
 
 
-/*********** indhold til forsiden  ************/
-/* Banner 1: top menupunkter - Annica*/
+
+/*********** indhold til forsiden - Mobil ************/
+/* Banner 1: top menupunkter - Mobil*/
 .forsidemenu {
   font-weight: lighter;
   padding: 10px;
@@ -203,7 +207,7 @@ header{
   margin-bottom: 10%;
 }
 
-/* Banner 2: Om Fryden - Michella*/
+/* Banner 2: Om Fryden - Mobil*/
 #intro {
   background-color: var(--green);
   display: flex;
@@ -230,14 +234,14 @@ color:var(--aqua);
   color: var(--yellow);
 }
 
-/* banner 3: Kaffe af god kvalitet - Michella. Mobil*/
+/* banner 3: Kaffe af god kvalitet. Mobil*/
 #kaffe-kvalitet{
   background-color: var(--yellow);
 }
 
 #kaffe-kvalitet h4{
   color: var(--aqua);
-  font-size: 100px;
+  font-size: 120px;
   font-family: signo, sans-serif;
 }
 
@@ -263,7 +267,7 @@ color:var(--aqua);
 
 
 
-/* Banner 4: Togo kop mobil. Annica*/
+/* Banner 4: Togo kop mobil.*/
 #togokopbanner {
   background-color: var(--pink);
 }
@@ -314,19 +318,32 @@ margin-bottom: 10%;
 #banner5 h2 {
   color: var(--aqua);
   font-size: 15px;
+  line-height: 1.8;
 }
 
-.banner5kop img{
+.banner5mobil img{
   width: 100%;
-  margin-top: -100px;
-  margin-bottom: -200px;
 }
 
-.banner5krav{
+.banner5laptop img{
+  display: none;
+}
+
+.kravinstagram{
+  text-align: left;
   font-family: var(--brødtekst);
   font-size: 15px;
   color: var(--pink);
+  margin-left: 15%;
+  line-height: 1.8;
 }
+
+.banner5krav{
+  margin-top: 5%;
+  margin-bottom: -2%;
+}
+
+
 
 
 /* banner 6: nyeste posts - mobil */
@@ -362,52 +379,7 @@ margin-bottom: 10%;
   display: none;
 }
 
-/*** Footer ***/
-footer{
-  background-color: var(--aqua);
-  color: var(--blue);
-}
 
-.cirkel-ikon img{
-width: 50%;
-padding-top: 13%;
-margin-left: auto;
-margin-right: auto;
-display: block;
-}
-
-.flex-container-footer{
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.footerp{
-  font-size: 15px;
-  padding
-}
-
-.flex-some {
-  padding-left: 23%;
-  padding-right: 23%;
-}
-
-.flex-some img{
-  height: 50px;
-  margin-top: 20px;
-}
-
-
-/* copyright nederst på siden */
-.footer-banner {
-  background-color: var(--blue);
-  height: 45px;
-}
-
-.bannerp{
-  padding-top: 8px;
-  color: var(--aqua);
-}
 
 
 /*********** indhold til om fryden underside: mobil************/
@@ -472,7 +444,7 @@ iframe {
 /* Underside - om fryden. Banner 3: Lokale råvarer */
 #omfryden h4{
   color: var(--aqua);
-  font-size: 110px;
+  font-size: 100px;
   font-family: signo, sans serif;
 }
 .overskrift-flex {
@@ -500,13 +472,18 @@ color: var(--red);
 }
 
 
-/*********** indhold til produkt underside ************/
+/*********** indhold til produkt underside. Mobil ************/
 #produktside {
   background-color: var(--pink);
 }
 
-#produktside h1 {
+#produktside h1, #produktside h2 {
   color: var(--red);
+}
+
+.produktoverskrift {
+  font-size: 20px;
+  text-align: center;
 }
 
 
@@ -515,22 +492,22 @@ color: var(--red);
 }
 
 
+/* Slideshow til mobilversion */
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 250px;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default*/
+/* skjuler billederne, til de vises*/
 .mySlides1, .mySlides2, .mySlides3 {
   display: none;
 }
 
-/* Next & previous buttons*/
+/* Knapper*/
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -546,19 +523,20 @@ color: var(--red);
   user-select: none;
 }
 
-/* Position the "next button" to the right*/
+/* Position af "next button"*/
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a background color with a little bit see-through*/
+
+/* baggrund på knapper med opacitet*/
 .prev:hover, .next:hover {
   background-color: rgba(29, 36, 114, 0.3);
 }
 
 
-/* The dots/bullets/indicators*/
+/* runde prikker*/
 .dot {
   cursor: pointer;
   height: 15px;
@@ -574,7 +552,7 @@ color: var(--red);
   background-color: #717171;
 }
 
-/* Fading animation*/
+/* Fade animation*/
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -650,33 +628,8 @@ color: var(--red);
   display: none;
 }
 
-/** Pink boks **/
-#kaffekortpink {
-  background-color: var(--pink);
-}
 
-#kaffekortpink h1 {
-  color: var(--blue);
-  font-size: 30px;
-  font-family: var(--overskrift);
-}
 
-#kaffekortpink p{
-  color: var(--red);
-  font-size: var(--brødtekst);
-}
-
-.mobilinfographicpink img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 70%;
-  margin-top: 5%;
-}
-
-.webinfographicpink{
-  display: none;
-}
 
 /** Grøn boks **/
 #kaffekortgron{
@@ -735,7 +688,7 @@ color: var(--red);
   text-align: center;
 }
 
-#kaffekortnostalgia b{
+#rod{
   font-family: var(--brødtekst);
   color: var(--red);
 }
@@ -759,6 +712,12 @@ color: var(--red);
   margin-top: 5%;
 }
 
+#kaffekortnostalgia a{
+  font-family: var(--brødtekst);
+  color: var(--red);
+  font-weight: bold;
+}
+
 b{
   font-family: var(--brødtekst);
   font-weight: bold;
@@ -771,16 +730,21 @@ b{
 }
 
 
-/* Footer */
-.footer h2{
-  color: var(--blue);
+
+
+/* 404 side */
+
+#mobil404 {
+  display: block;
 }
 
-.footer p{
-  color: var(--blue);
-}
+#commi404 {
+  display: none;
 }
 
+
+
+/*** Footer MOBIL ***/
 
 /* Lokal cirkel, der bevæger sig */
 
@@ -810,22 +774,100 @@ b{
 }
 
 
-/* 404 side */
-
-#mobil404 {
-  display: block;
+footer{
+  background-color: var(--aqua);
+  color: var(--blue);
 }
 
-#commi404 {
-  display: none;
+
+.flex-container-footer{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
+
+.footerp{
+  font-size: 15px;
+  padding
+}
+
+.flex-some {
+  padding-left: 23%;
+  padding-right: 23%;
+}
+
+.flex-some img{
+  height: 50px;
+  margin-top: 20px;
+  margin-left: 7%;
+}
+
+
+/* copyright nederst på siden */
+.footer-banner {
+  background-color: var(--blue);
+  height: 45px;
+}
+
+.bannerp{
+  padding-top: 8px;
+  color: var(--aqua);
+}
+
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+p {
+ text-align: center;
+ text-align: left;
+}
 
-  /* Forside. Banner 1: ipad. Annica */
+body {
+  background-color: var(--aqua);
+}
+
+
+/* Navigationsbar mellem skærm */
+
+      /*Burgermenu skjules */
+        .hamburger{
+          display: none;
+          }
+      /*Navigationsbaren styles */
+        header{
+          background-color: var(--pink);
+          }
+
+        .nav-link1{
+          color: var(--blue);
+          text-decoration: none;
+          }
+
+        .nav-item1{
+          list-style-type: none;
+          display:inline-block;
+          margin: 0 8% 0 8%;
+          }
+
+        .nav-logo img{
+          width: 50px;
+          }
+
+          .nav-menu1{
+            display: block;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+            font-family: var(--overskrift);
+            font-size: 15px;
+          }
+
+
+
+  /* Forside. Banner 1: ipad.*/
     #topbillede {
       display: block;
       margin-left: 11.5%;
@@ -873,9 +915,178 @@ b{
       display: none;
     }
 
+    /* Forside. Banner 2: Om Fryden - Michella. iPad*/
+    #intro {
+    display: flex;
+    flex-direction: row;
+    }
+
+    .column-1 {
+    width: 50%;
+    text-align: right;
+    }
+
+    .column-1 img{
+    margin-top: 10%;
+    margin-left: 20%;
+    height: 400px;
+    }
+
+    .column-1 h1{
+    display: none;
+
+    }
+
+    .column-2 {
+    width: 50%;
+    }
+
+    .column-2 h1{
+    color: var(--aqua);
+    display: block;
+    text-align: left;
+    margin-right: 20%;
+    margin-left: 12%
+    }
+
+    /* Forside. banner 3: Kaffe af god kvalitet - Michella. iPad */
+    #kaffe-kvalitet h1{
+      display: none;
+      margin-top: -5%;
+    }
+
+    #kaffe-kvalitet h4{
+      color: var(--aqua);
+      font-size: 260px;
+      font-family: signo, sans-serif;
+    }
+
+    #tobilleder-flex {
+      display: flex;
+      flex-direction: row;
+      margin-top: -27%;
+    }
+
+    #tobilleder-flex img{
+      height: 300px;
+    }
+
+    #kaffebillede1 {
+      padding-left: 20%;
+    }
+
+    #kaffebillede2 {
+      padding-right: 20%;
+    }
+
+    #tekst-flex h1{
+      display: block;
+      text-align: center;
+    margin-top: -10%;
+    }
+
+    #tekst-flex p{
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .to-billeder {
+      display: flex;
+      flex-direction: row;
+      width: 50%;
+      padding: 5px;
+    }
+
+    /* Forside. Annica. Banner 4: to go kop: iPad */
+
+    #togokopbanner {
+      display: flex;
+      padding-top: 8%;
+      padding-bottom: 8%;
+    }
+
+    #togokopbanner h1{
+      margin-left: -12%;
+    }
+
+    #togokopbanner video{
+      max-width: 270px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40%;
+    }
+
+    .togokopmobil {
+      display: none;
+    }
+
+    .togokopcom {
+      display: block;
+      margin-right: 10%;
+      padding-top: 15px;
+    }
+
+    .togokop {
+      margin-left: 7%;
+    }
 
 
-    /* Forside. banner 7: nyeste posts - Annica. Ipad*/
+      /* Banner 5: Instagram konkurrence */
+
+      #banner5 h1 {
+        color: var(--pink);
+        text-align: left;
+        margin-left: 18%;
+      }
+
+      #banner5 p {
+        color: var(--pink);
+        font-size: 15px;
+        text-align: left;
+        margin-left: 18%;
+      }
+
+      #banner5 h2 {
+        color: var(--aqua);
+        font-size: 15px;
+      }
+
+      .banner5mobil img{
+        display: none;
+      }
+
+      .kravinstagram{
+        text-align: left;
+        font-family: var(--brødtekst);
+        font-size: 15px;
+        color: var(--pink);
+        margin-left: 20%;
+        line-height: 1.8;
+      }
+
+      .banner5krav{
+        margin-top: -8%;
+        margin-bottom: -5%;
+      }
+
+      #banner5koptop{
+        margin-top: -45%;
+        margin-bottom: 10%;
+        line-height: 1.8;
+        text-align: left;
+        margin-left: 18%;
+      }
+
+      .banner5laptop img{
+        display: block;
+        width: 100%;
+        margin-top: -18%;
+      }
+
+
+
+    /* Forside. banner 7: nyeste posts. Ipad*/
 
     .nyesteinsta {
       display: none;
@@ -892,9 +1103,10 @@ b{
       max-width: 150px;
     }
 
+
   /*********** indhold til Om Fryden underside: ipad.************/
 
-  /* Underside. Om Fryden. Banner 1 styles: computer. */
+  /* Underside: Om Fryden. Banner 1 - iPad. */
 
   #mødcecilie {
     display: none;
@@ -919,7 +1131,7 @@ b{
     margin-top: 40%;
   }
 
-  /* Underside: Om Fryden. Banner 2 styles: computer */
+  /* Underside: Om Fryden. Banner 2 - ipad */
 
   #kortogtider {
     display: none;
@@ -934,6 +1146,8 @@ b{
   #kortogtidercomputer h1 {
     color: var(--aqua);
     margin-top: 5%;
+    text-align: left;
+    margin-left: 12%;
   }
 
   #kortogtidercomputer p {
@@ -956,8 +1170,41 @@ b{
     margin-top: 5%;
   }
 
+  /* underside om fryden. Banner 3:Lokalt. ipad. */
+  #omfryden {
+  background-color: var(--yellow);
+  display: flex;
+  flex-direction: row;
+  }
 
-  /*********** indhold til produkt underside: ipad. Annica ************/
+  #omfryden h4{
+    display: none;
+  }
+  .overskrift-flex {
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+  .overskrift-flex h1{
+    display: none;
+  }
+
+  .overskrift-flex img{
+    height: 400px;
+  }
+
+  .teksten-flex{
+    margin-top: 5%;
+    margin-right: 10%;
+  }
+
+  .teksten-flex h1{
+    display: block;
+    color: var(--red);
+    padding-left: 12%;
+    text-align: left;
+  }
+
+  /*********** indhold til produkt underside: ipad. ************/
 
   #slideshowmobil {
     display: none;
@@ -971,13 +1218,23 @@ b{
     background-color: var(--yellow);
   }
 
-  #produktside h1 {
+  #produktside h1, #produktside h2 {
     color: var(--green);
+  }
+
+  #produktside p {
+    margin-top: 2%;
   }
 
   #produkth1 {
     text-align: center;
     margin: 0;
+  }
+
+  .produktoverskrift {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 12%;
   }
 
   .produktbilleder img {
@@ -998,51 +1255,66 @@ b{
 
 
 
-  /*** Footer ***/
-  footer{
-    background-color: var(--aqua);
-    color: var(--blue);
-  }
+/*** Footer ipad ***/
 
-  .footerp{
-    line-height: 1.2;
-  }
+/*** Footer ***/
+footer{
+  background-color: var(--aqua);
+  color: var(--blue);
+}
 
-
-  .flex-container-footer{
-  display: flex;
-  }
-
-  .flex-container-footer h2{
-  text-align: center;
-  padding-bottom: 15px;
-  }
-
-  .flex-some, .flex-kontakt,.flex-tider {
-    margin-left: -8%;
-    margin-right: -8%
-    padding: -1%;
-
-  }
-
-  .flex-some img{
-  max-height: 50px;
-  margin-top: 20px;
-  }
-
-
-  /* copyright nederst på siden */
-  .bannerp{
+.footerp{
+  line-height: 1.2;
   font-size: 15px;
-  padding-top: 8px;
   text-align: center;
-    }
+}
 
-  /* lokalcirkel, der drejer rundt */
+.flex-container-footer{
+display: flex;
+flex-direction: row;
+padding-left: 5%;
+padding-right: 9%;
+justify-content: space-between;
+padding-bottom: 20px;
+}
 
-  #rundcirkel img {
-    min-width: 250px;
+.flex-container-footer h2{
+text-align: center;
+padding-bottom: 15px;
+font-size: 18px;
+
+}
+
+.flex-some {
+padding: 0;
+}
+
+.flex-some img{
+max-height: 60px;
+margin-top: 20px;
+margin-left: 0%;
+}
+
+.flex-some,.flex-kontakt, .flex-tider {
+  padding-left: 5%;
+}
+
+
+
+/* copyright nederst på siden */
+.bannerp{
+font-size: 15px;
+padding-top: 8px;
+text-align: center;
   }
+
+/* lokalcirkel, der drejer rundt */
+
+#rundcirkel img {
+  min-width: 350px;
+}
+
+
 
 
 }
@@ -1099,36 +1371,46 @@ b{
     text-align: left;
   }
 
+  /* Navigationsbar computer */
+  /* Burgermenu skjules */
+      .hamburger{
+        display: none;
+        }
 
-/* Navigationsbar styles */
-header {
-  background-color: var(--pink);
-}
+    /*Navigationsbaren styles */
+      header{
+        background-color: var(--pink);
+        }
 
-.navbar{
-  min-height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 24px;
-}
+      .nav-link1{
+        color: var(--blue);
+        text-decoration: none;
+        }
 
-.nav-menu{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
+      .nav-item1{
+        list-style-type: none;
+        display:inline-block;
+        margin: 0 8% 0 8%;
+        }
 
+      .nav-logo img{
+        width: 50px;
+        }
 
-.nav-link:hover{
-  color: var(--aqua);
-}
+        .nav-menu1{
+          display: block;
+          width: 100%;
+          text-align: center;
+          transition: 0.3s;
+          font-family: var(--overskrift);
+          font-size: 18px;
+        }
 
-.hamburger{
-  display: none;
-}
-
+        .navbar a:hover{
+          opacity: 0.8;
+          transition: .2s;
+          color: var(--red);
+        }
 
 
 
@@ -1140,6 +1422,7 @@ header {
 
   #topbillede img {
     min-height: 750px;
+
   }
 
   #forsidetop {
@@ -1187,7 +1470,7 @@ header {
     width: 630px;
   }
 
-  /* Forside. Banner 2: Om Fryden - Michella*/
+  /* Forside. Banner 2: Om Fryden - Michella. Computer*/
   #intro {
   display: flex;
   flex-direction: row;
@@ -1214,6 +1497,10 @@ header {
   .column-2 h1{
   color: var(--aqua);
   display: block;
+  }
+
+  .column-2 p{
+    margin-left: 12%;
   }
 
 /* Forside. banner 3: Kaffe af god kvalitet - Michella. Computer */
@@ -1255,6 +1542,12 @@ header {
   text-align: center;
 }
 
+.to-billeder {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  padding: 5px;
+}
 
 /* Forside. Annica. Banner 4: to go kop: computer */
 
@@ -1262,6 +1555,10 @@ header {
   display: flex;
   padding-top: 8%;
   padding-bottom: 8%;
+}
+
+#togokopbanner h1{
+  margin-left: 18%;
 }
 
 #togokopbanner video{
@@ -1286,12 +1583,47 @@ header {
   margin-left: 7%;
 }
 
-/* Forside. banner 5: Kaffe af god kvalitet - Michella */
-.to-billeder {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  padding: 5px;
+
+/* Banner 5: Instagram konkurrence */
+#banner5 p {
+  color: var(--pink);
+  font-size: 20px;
+}
+
+#banner5 h2 {
+  color: var(--aqua);
+  font-size: 20px;
+}
+
+.banner5mobil img{
+  display: none;
+}
+
+.kravinstagram{
+  text-align: left;
+  font-family: var(--brødtekst);
+  font-size: 18px;
+  color: var(--pink);
+  margin-left: 20%;
+  line-height: 1.8;
+}
+
+.banner5krav{
+  margin-top: -8%;
+  margin-bottom: -2%;
+}
+
+#banner5koptop{
+  margin-top: -40%;
+  margin-bottom: 10%;
+  margin-left: 18%;
+  line-height: 1.8;
+}
+
+.banner5laptop img{
+  display: block;
+  width: 100%;
+  margin-top: -18%;
 }
 
 
@@ -1334,7 +1666,9 @@ header {
 }
 
 #mødceciliecomputer img {
-  height: 750px;
+  min-height: 750px;
+  margin: 0;
+  margin-left: 12%;
 }
 
 /* Underside: Om Fryden. Banner 2 styles: computer */
@@ -1379,11 +1713,14 @@ iframe {
 background-color: var(--yellow);
 display: flex;
 flex-direction: row;
+padding-left: 10%;
 }
+
 
 #omfryden h4{
   display: none;
 }
+
 .overskrift-flex {
   margin-top: 5%;
   margin-left: 10%;
@@ -1404,6 +1741,7 @@ flex-direction: row;
 .teksten-flex h1{
   display: block;
   color: var(--red);
+  margin-left: 6%;
 }
 
 
@@ -1421,7 +1759,7 @@ flex-direction: row;
   background-color: var(--yellow);
 }
 
-#produktside h1 {
+#produktside h1, #produktside h2 {
   color: var(--green);
 }
 
@@ -1429,6 +1767,13 @@ flex-direction: row;
   text-align: center;
   margin: 0;
 }
+
+.produktoverskrift {
+  font-size: 25px;
+  text-align: left;
+  margin-left: 18%;
+}
+
 
 .produktbilleder img {
   max-width: 300px;
@@ -1456,16 +1801,17 @@ flex-direction: row;
 }
 
 .webkaerlighedforkaffe img{
-width: 100%;
-text-align: center;
-margin: auto;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 #kaerlighedforkaffe h1 {
   font-family:  var(--ballare);
   color: var(--red);
   font-size: 50px;
-  margin-left: 20%;
+  text-align: center;
 }
 
 .webkaerlighedforkaffe p{
@@ -1501,29 +1847,7 @@ margin: auto;
   margin-bottom: 2%;
   font-size: 40px;
 }
-/** Pink boks */
-.mobilinfographicpink{
-  display: none;
-}
 
-.webinfographicpink{
-  display: block;
-  text-align: center;
-}
-
-#kaffekortpink h1{
-  font-size: 50px;
-  margin-left: 30%;
-}
-
-.webinfographicpink p{
-  text-align: center;
-}
-
-.webinfographicpink img{
-  width: 70%;
-  margin: auto;
-}
 
 /** Grøn boks */
 .mobilinfographicgron{
@@ -1558,7 +1882,7 @@ margin: auto;
   color: var(--blue);
 }
 
-#webinfographicaqua b{
+#red{
   font-family: var(--brødtekst);
   color: var(--red);
 }
@@ -1579,8 +1903,18 @@ margin: auto;
 }
 
 #webmoodcoffee img{
-  height: 750px;
-  width: 600px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 12%;
+}
+
+#nostalgia h1{
+  font-family: var(--ballare);
+  color: var(--red);
+  font-size: 50px;
+  margin: auto;
 }
 
 #bold{
@@ -1589,11 +1923,17 @@ margin: auto;
   font-family: var(--brødtekst);
 }
 
-  }
+.kaffekortnostalgia a{
+  color: var(--red);
+  font-family: var(--brødtekst);
+  margin-left: 18%;
+  font-weight: bold;
+}
+
+
 
 
   /* 404 side */
-
   #mobil404 {
     display: none;
   }
@@ -1603,8 +1943,7 @@ margin: auto;
   }
 
 
-
-  /*** Footer ***/
+  /*** Footer computer***/
   footer{
     background-color: var(--aqua);
     color: var(--blue);
@@ -1618,7 +1957,8 @@ margin: auto;
 
   .flex-container-footer{
   display: flex;
-  padding-left: 15%;
+  flex-direction: row;
+  padding-left: 5%;
   padding-right: 15%;
   justify-content: space-between;
   padding-bottom: 20px;
@@ -1638,11 +1978,14 @@ margin: auto;
   .flex-some img{
   min-height: 70px;
   margin-top: 20px;
+  margin-left: 0%;
   }
 
   .flex-tider {
-    margin-right: -5%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
+
 
   /* copyright nederst på siden */
   .bannerp{
@@ -1656,6 +1999,4 @@ margin: auto;
   #rundcirkel img {
     min-width: 350px;
   }
-
-
 }

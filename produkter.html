@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
   <title>Om Fryden</title>
   <meta charset="UTF-8">
@@ -11,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- favicon = ikon i faneblad / browser -->
-  <link rel="icon" type="image/x-icon" href="images/xikon.png"/>
+  <link rel="icon" type="image/x-icon" href="images/xikon.png" />
 
 
   <!-- link til AOS library style sheet -->
@@ -22,236 +23,279 @@
 
 <body>
 
-<section id="produktside">
 
-  <h1 id="produkth1">Fryd produkter</h1>
-  <p>Hos Fryden Kaffebar laver vi vores egne produkter og her kan du se hele udvalget.
-Alle produkterne kan købes i Fryden Kaffebar på Mejlgade 40. Når du kommer ind i
-butikken, kan du nævne koden “Online10” og få 10% på et produkt. </p>
+  <!-- Freja: Navigationsbar -->
+  <header>
 
-<!-- til mobilen -->
-<!-- Slideshow container -->
-<div id="slideshowmobil">
+    <!-- Lille logo kop header -->
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo"><img src="images/logolillekop.png" alt="Fryden kop"></a>
 
-  <h1>To go koppen</h1>
-  <p>Når du køber denne kop, får du 10% på kaffe, hver
-  gang du får den fyldt hos Fryden Kaffebar.
-  Koppen er lavet i genanvendt plastik og har et
-  låg i bæredygtigt træ.</p>
-  <p class="hjertebarn"> Pris: 150 kr</p>
+      <!-- Menupunkter lille skærm -->
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="omfryden.html" class="nav-link">Om Fryden</a>
+        </li>
+        <li class="nav-item">
+          <a href="kaffekort.html" class="nav-link">Kaffekort</a>
+        </li>
+        <li class="nav-item">
+          <a href="produkter.html" class="nav-link">Fryd produkter</a>
+        </li>
+        <li class="nav-item">
+          <a href="produkter.html" class="nav-logo2"><img src="images/logoskabelon.png" alt="Fryden kop"></a>
+        </li>
+      </ul>
 
-<div class="slideshow-container">
+      <!-- Menupunkter stor skærm-->
+      <ul class="nav-menu1">
+        <li class="nav-item1">
+          <a href="omfryden.html" class="nav-link1">Om Fryden</a>
+        </li>
+        <li class="nav-item1">
+          <a href="kaffekort.html" class="nav-link1">Kaffekort</a>
+        </li>
+        <li class="nav-item1">
+          <a href="produkter.html" class="nav-link1">Fryd produkter</a>
+        </li>
+      </ul>
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides1 fade">
-    <img src="images/togokop1.JPG" style="width:100%" alt="Togokop 1">
-  </div>
+      <!-- Burgermenu lille skærm-->
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
 
-  <div class="mySlides1 fade">
-    <img src="images/togokop2.JPG" style="width:100%" alt="Togokop 2">
-  </div>
-
-  <div class="mySlides1 fade">
-    <img src="images/togokop3.JPG" style="width:100%" alt="Togokop 3">
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-
-
-
-<h1>Plakater</h1>
-<p>Plakaterne er lavet i samarbejde med en lokal designer og sælges eksklusivt af Fryden Kaffebar</p>
-<p class="hjertebarn">Pris: 250 kr</p>
-
-<div class="slideshow-container">
-
-<!-- Full-width images with number and caption text -->
-<div class="mySlides2 fade">
-  <img src="images/plakat1.png" style="width:100%" alt="Plakat 1: fryden gul">
-</div>
-
-<div class="mySlides2 fade">
-  <img src="images/hus.png" style="width:100%" alt="Plakat 2: fryden facade">
-</div>
-
-<div class="mySlides2 fade">
-  <img src="images/plakat2.png" style="width:100%" alt="Plakat 3: fryden lyserød">
-</div>
-
-<!-- Next and previous buttons -->
-<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-<span class="dot" onclick="currentSlide(1)"></span>
-<span class="dot" onclick="currentSlide(2)"></span>
-<span class="dot" onclick="currentSlide(3)"></span>
-</div>
+    </nav>
+  </header>
 
 
+  <!-- Annica: Underside produkter-->
 
+  <section id="produktside">
 
-<h1>Muleposer</h1>
-<p>Muleposerne er lavet i samarbejde med en lokal designer og sælges eksklusivt af Fryden Kaffebar</p>
-<p class="hjertebarn">Pris: 100 kr</p>
+    <h1 id="produkth1">Fryd produkter</h1>
+    <p>Hos Fryden Kaffebar laver vi vores egne produkter og her kan du se hele udvalget.
+      Alle produkterne kan købes i Fryden Kaffebar på Mejlgade 40. Når du kommer ind i
+      butikken, kan du nævne koden “Online10” og få 10% på et produkt. </p>
 
-<div class="slideshow-container">
+    <!-- til mobilen -->
+    <!-- Slideshow container -->
+    <div id="slideshowmobil">
 
-<!-- Full-width images with number and caption text -->
-<div class="mySlides3 fade">
-  <img src="images/pinkmulepose1.jpg" style="width:100%" alt="Pink mulepose 1">
-</div>
+      <h2 class="produktoverskrift">To go koppen</h2>
+      <p>Når du køber denne kop, får du 10% på kaffe, hver
+        gang du får den fyldt hos Fryden Kaffebar.
+        Koppen er lavet i genanvendt plastik og har et
+        låg i bæredygtigt træ.</p>
+      <p class="hjertebarn"> Pris: 150 kr</p>
 
-<div class="mySlides3 fade">
-  <img src="images/blåmulepose2.jpg" style="width:100%" alt="Blå mulepose">
-</div>
+      <div class="slideshow-container">
 
-<div class="mySlides3 fade">
-  <img src="images/pinkmulepose2.jpg" style="width:100%" alt="Pink mulepose 2">
-</div>
+        <!-- Full-width images med nr og caption tekst -->
+        <div class="mySlides1 fade">
+          <img src="images/togokop1.JPG" style="width:100%" alt="Togokop 1">
+        </div>
 
-<!-- Next and previous buttons -->
-<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-</div>
-<br>
+        <div class="mySlides1 fade">
+          <img src="images/togokop2.JPG" style="width:100%" alt="Togokop 2">
+        </div>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-<span class="dot" onclick="currentSlide(1)"></span>
-<span class="dot" onclick="currentSlide(2)"></span>
-<span class="dot" onclick="currentSlide(3)"></span>
-</div>
+        <div class="mySlides1 fade">
+          <img src="images/togokop3.JPG" style="width:100%" alt="Togokop 3">
+        </div>
+
+        <!-- Pile-knapper -->
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- Prikkerne under billederne -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
 
 
 
+      <h2 class="produktoverskrift">Plakater</h2>
+      <p>Plakaterne er lavet i samarbejde med en lokal designer og sælges eksklusivt af Fryden Kaffebar</p>
+      <p class="hjertebarn">Pris: 250 kr</p>
+
+      <div class="slideshow-container">
+
+        <!-- Full-width images med nr og caption tekst  -->
+        <div class="mySlides2 fade">
+          <img src="images/plakat1.png" style="width:100%" alt="Plakat 1: fryden gul">
+        </div>
+
+        <div class="mySlides2 fade">
+          <img src="images/hus.png" style="width:100%" alt="Plakat 2: fryden facade">
+        </div>
+
+        <div class="mySlides2 fade">
+          <img src="images/plakat2.png" style="width:100%" alt="Plakat 3: fryden lyserød">
+        </div>
+
+        <!-- Pile-knapper -->
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- Prikkerne under billederne  -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
 
 
 
+      <h2 class="produktoverskrift">Muleposer</h2>
+      <p>Muleposerne er lavet i samarbejde med en lokal designer og sælges eksklusivt af Fryden Kaffebar</p>
+      <p class="hjertebarn">Pris: 100 kr</p>
 
-</div>
+      <div class="slideshow-container">
 
+        <!-- Full-width images med nr og caption tekst -->
+        <div class="mySlides3 fade">
+          <img src="images/pinkmulepose1.jpg" style="width:100%" alt="Pink mulepose 1">
+        </div>
 
-<!-- til computer -->
+        <div class="mySlides3 fade">
+          <img src="images/blåmulepose2.jpg" style="width:100%" alt="Blå mulepose">
+        </div>
 
-<div id="produktsidecomputer">
-<h1>To go koppen</h1>
-<p>Når du køber denne kop, får du 10% på kaffe, hver
-gang du får den fyldt hos Fryden Kaffebar.
-Koppen er lavet i genanvendt plastik og har et
-låg i bæredygtigt træ.</p>
-<p class="hjertebarn"> Pris: 150 kr</p>
+        <div class="mySlides3 fade">
+          <img src="images/pinkmulepose2.jpg" style="width:100%" alt="Pink mulepose 2">
+        </div>
 
-<div class="produktside">
-  <div class="produktbilleder">
-    <img src="images/togokop1.JPG" alt="togokop1">
-  </div>
+        <!-- Pile-knapper -->
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+      </div>
+      <br>
 
-  <div class="produktbilleder">
-    <img src="images/togokop2.JPG" alt="togokop2">
-  </div>
+      <!-- Prikkerne under billederne  -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
 
-  <div class="produktbilleder">
-    <img src="images/togokop3.JPG" alt="togokop3">
-  </div>
-</div>
-
-
-<h1>Plakater</h1>
-<p>Plakaterne er lavet i samarbejde med en lokal designer og sælges eksklusivt af Fryden Kaffebar</p>
-<p class="hjertebarn">Pris: 250 kr</p>
-
-<div class="produktside">
-  <div class="produktbilleder">
-    <img src="images/plakat1.png" alt="plakat 1: fryden gul">
-  </div>
-
-  <div class="produktbilleder">
-    <img src="images/hus.png" alt="plakat 2: fryden facade">
-  </div>
-
-  <div class="produktbilleder">
-    <img src="images/plakat2.png" alt="plakat 3: fryden lyserød">
-  </div>
-</div>
+    </div>
 
 
-<h1>Muleposer</h1>
-<p>Muleposerne er lavet i samarbejde med en lokal designer og sælges eksklusivt af Fryden Kaffebar</p>
-<p class="hjertebarn">Pris: 100 kr</p>
+    <!-- til computer -->
 
-<div class="produktside">
-  <div class="produktbilleder">
-    <img src="images/pinkmulepose1.jpg" alt="pink mulepose 1">
-  </div>
+    <div id="produktsidecomputer">
+      <h2 class="produktoverskrift">To go koppen</h2>
+      <p>Når du køber denne kop, får du 10% på kaffe, hver
+        gang du får den fyldt hos Fryden Kaffebar.
+        Koppen er lavet i genanvendt plastik og har et
+        låg i bæredygtigt træ.</p>
+      <p class="hjertebarn"> Pris: 150 kr</p>
 
-  <div class="produktbilleder">
-     <img src="images/blåmulepose2.jpg" alt="blå mulepose 1">
-  </div>
+      <div class="produktside">
+        <div class="produktbilleder">
+          <img src="images/togokop1.JPG" alt="togokop1" data-aos="fade-up" data-aos-duration="800">
+        </div>
 
-  <div class="produktbilleder">
-    <img src="images/pinkmulepose2.jpg" alt="pink mulepose 2">
-  </div>
-</div>
-</div>
+        <div class="produktbilleder">
+          <img src="images/togokop2.JPG" alt="togokop2" data-aos="fade-up" data-aos-duration="800">
+        </div>
 
-</section>
+        <div class="produktbilleder">
+          <img src="images/togokop3.JPG" alt="togokop3" data-aos="fade-up" data-aos-duration="800">
+        </div>
+      </div>
+
+
+      <h2 class="produktoverskrift">Plakater</h2>
+      <p>Plakaterne er lavet i samarbejde med en lokal designer og sælges eksklusivt af Fryden Kaffebar</p>
+      <p class="hjertebarn">Pris: 250 kr</p>
+
+      <div class="produktside">
+        <div class="produktbilleder">
+          <img src="images/plakat1.png" alt="plakat 1: fryden gul" data-aos="fade-up" data-aos-duration="800">
+        </div>
+
+        <div class="produktbilleder">
+          <img src="images/hus.png" alt="plakat 2: fryden facade" data-aos="fade-up" data-aos-duration="800">
+        </div>
+
+        <div class="produktbilleder">
+          <img src="images/plakat2.png" alt="plakat 3: fryden lyserød" data-aos="fade-up" data-aos-duration="800">
+        </div>
+      </div>
+
+
+      <h2 class="produktoverskrift">Muleposer</h2>
+      <p>Muleposerne er lavet i samarbejde med en lokal designer og sælges eksklusivt af Fryden Kaffebar</p>
+      <p class="hjertebarn">Pris: 100 kr</p>
+
+      <div class="produktside">
+        <div class="produktbilleder">
+          <img src="images/pinkmulepose1.jpg" alt="pink mulepose 1" data-aos="fade-up" data-aos-duration="800">
+        </div>
+
+        <div class="produktbilleder">
+          <img src="images/blåmulepose2.jpg" alt="blå mulepose 1" data-aos="fade-up" data-aos-duration="800">
+        </div>
+
+        <div class="produktbilleder">
+          <img src="images/pinkmulepose2.jpg" alt="pink mulepose 2" data-aos="fade-up" data-aos-duration="800">
+        </div>
+      </div>
+    </div>
+
+  </section>
 
 
 
-<!-- Footer -->
-<!-- Footer SOME ikoner -->
-<footer>
-  <div id="rundcirkel">
-    <img src="images/lokalcirkel-03.png" class="rotate" width="200" alt="lokalcirkel">
-  </div>
+  <!-- Michella: Footer -->
+  <!-- Footer SOME ikoner -->
+  <footer>
+    <div id="rundcirkel">
+      <img src="images/lokalcirkel-03.png" class="rotate" width="200" alt="lokalcirkel">
+    </div>
 
- <!-- Footer kontaktinfo og Om os - flexbox -->
- <div class="flex-container-footer">
-     <div class="flex-kontakt">
-       <h2> Kontaktinformation </h2>
-       <p class="footerp"> Mejlgade 40, 8000 Aarhus </p>
-       <p class="footerp"> Tlf.: 20556720 </p>
-       <p class="footerp"> Mail: frydenkaffe@mail.dk </p>
-     </div>
-     <div class="flex-tider">
-       <h2> Åbningstider </h2>
-       <p class="footerp">Mandag - fredag: 9.00 -17.00</p>
-       <p class="footerp">Lørdag: 10.00 - 17.00 </p>
-       <p class="footerp">Søndag: lukket (Cecilies fridag ❤) </p>
-     </div>
-     <div class="flex-some">
-    <h2> Sociale medier </h2>
-    <a href="404.html"><img src="images/facebook.png" alt="ikoner"></a>
-    <a href="https://www.instagram.com/frydeksamen/"><img src="images/instagram.png" alt="ikoner"></a>
-    <a href="https://www.tiktok.com/@frydeneksamen"><img src="images/tiktok.png" alt="ikoner"></a>
-  </div>
-   </div>
+    <!-- Footer kontaktinfo og Om os - flexbox -->
+    <div class="flex-container-footer">
+      <div class="flex-kontakt">
+        <h2> Kontaktinformation </h2>
+        <p class="footerp"> Mejlgade 40, 8000 Aarhus </p>
+        <p class="footerp"> Tlf.: 20556720 </p>
+        <p class="footerp"> Mail: frydenkaffe@mail.dk </p>
+      </div>
+      <div class="flex-tider">
+        <h2> Åbningstider </h2>
+        <p class="footerp">Mandag - fredag: 9.00 -17.00</p>
+        <p class="footerp">Lørdag: 10.00 - 17.00 </p>
+        <p class="footerp">Søndag: lukket (Cecilies fridag ❤) </p>
+      </div>
+      <div class="flex-some">
+        <h2> Sociale medier </h2>
+        <a href="404.html"><img src="images/facebook.png" alt="ikoner"></a>
+        <a href="https://www.instagram.com/frydeksamen/"><img src="images/instagram.png" alt="ikoner"></a>
+        <a href="https://www.tiktok.com/@frydeneksamen"><img src="images/tiktok.png" alt="ikoner"></a>
+      </div>
+    </div>
 
-   <!-- banner nederst - Fryden Kaffebar © 2022 -->
-   <div class="footer-banner">
-   <p class="bannerp"> Fryden Kaffebar  © 2022 </p>
-   </div>
- </footer>
+    <!-- banner nederst - Fryden Kaffebar © 2022 -->
+    <div class="footer-banner">
+      <p class="bannerp"> Fryden Kaffebar © 2022 </p>
+    </div>
+  </footer>
 
-<script src="js/js.js"></script>
-<script src="js/slideshow.js"></script>
+  <script src="js/js.js"></script>
+  <script src="js/slideshow.js"></script>
 
-<!-- AOS library-->
+  <!-- AOS library-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

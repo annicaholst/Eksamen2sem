@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
   <title>Fryden Kaffebar</title>
   <meta charset="UTF-8">
@@ -11,246 +12,266 @@
   <link rel="stylesheet" href="css/style.css">
 
   <!-- favicon = ikon i faneblad / browser -->
-  <link rel="icon" type="image/x-icon" href="images/xikon.png"/>
+  <link rel="icon" type="image/x-icon" href="images/xikon.png" />
 
 
   <!-- link til AOS library style sheet -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
-
 </head>
+
 
 <body>
 
-    <!-- Navigationsbar -->
+  <!-- Freja: Navigationsbar -->
+    <!-- Youtube tutorial brugt, som hjælp til kodning af navigationsbaren - https://www.youtube.com/watch?v=flItyHiDm7E&t=62s -->
+  <header>
 
-   <header>
-     <!-- Lille logo kop header -->
-     <nav class="navbar">
-          <a href="index.html" class="nav-logo"><img src="images/logolillekop.png" alt="Fryden kop"></a>
+    <!-- Lille logo kop header -->
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo"><img src="images/logolillekop.png" alt="Fryden kop"></a>
 
-  <!-- Menupunkter -->
-     <ul class="nav-menu">
-       <li class="nav-item">
-         <a href="omfryden.html" class="nav-link">Om Fryden</a>
-       </li>
-       <li class="nav-item">
-         <a href="kaffekort.html" class="nav-link">Kaffekort</a>
-       </li>
-       <li class="nav-item">
-         <a href="produkter.html" class="nav-link">Fryd produkter</a>
-       </li>
-       <li class="nav-item">
-         <a href="index.html" class="nav-logo2"><img src="images/logoskabelon.png" alt="Fryden kop"></a>
-       </li>
-     </ul>
+      <!-- Menupunkter lille skærm -->
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="omfryden.html" class="nav-link">Om Fryden</a>
+        </li>
+        <li class="nav-item">
+          <a href="kaffekort.html" class="nav-link">Kaffekort</a>
+        </li>
+        <li class="nav-item">
+          <a href="produkter.html" class="nav-link">Fryd produkter</a>
+        </li>
+        <li class="nav-item">
+          <a href="produkter.html" class="nav-logo2"><img src="images/logoskabelon.png" alt="Fryden kop"></a>
+        </li>
+      </ul>
+
+      <!-- Menupunkter stor skærm-->
+      <ul class="nav-menu1">
+        <li class="nav-item1">
+          <a href="omfryden.html" class="nav-link1">Om Fryden</a>
+        </li>
+        <li class="nav-item1">
+          <a href="kaffekort.html" class="nav-link1">Kaffekort</a>
+        </li>
+        <li class="nav-item1">
+          <a href="produkter.html" class="nav-link1">Fryd produkter</a>
+        </li>
+      </ul>
+
+      <!-- Burgermenu lille skærm-->
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+    </nav>
+  </header>
 
 
-  <!-- Burgermenu -->
-     <div class="hamburger">
-         <span class="bar"></span>
-         <span class="bar"></span>
-         <span class="bar"></span>
-       </div>
 
-      </nav>
-    </header>
-
-
-
-<!-- Annica. Banner 1: forside med menupunkter -->
+  <!-- Annica: Banner 1 - forside med menupunkter -->
 
   <section id="forsidetop">
 
-  <article id="forsidemenu">
+    <article id="forsidemenu">
 
-    <div class="topbilleder">
-    <img id="slangetop" src="images/slange-02.png" alt="slange med fryden kaffebar til baggrund">
-    <img id="logotilforsidetop" src="images/logoskabelon.png" alt="Logo">
-    </div>
+      <div class="topbilleder">
+        <img id="slangetop" src="images/slange-02.png" alt="slange med fryden kaffebar til baggrund">
+        <img id="logotilforsidetop" src="images/logoskabelon.png" alt="Logo">
+      </div>
 
-    <hr>
-    <a href="omfryden.html"><h1 class="forsidemenu" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Om Fryden</h1></a>
-    <a href="kaffekort.html"><h1 class="forsidemenu" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">Kaffekort</h1></a>
-    <a href="produkter.html"><h1 class="forsidemenu" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Fryd produkter</h1></a>
-  </article>
+      <hr>
+      <a href="omfryden.html">
+        <h1 class="forsidemenu" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Om Fryden</h1>
+      </a>
+      <a href="kaffekort.html">
+        <h1 class="forsidemenu" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1000">Kaffekort</h1>
+      </a>
+      <a href="produkter.html">
+        <h1 class="forsidemenu" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Fryd produkter</h1>
+      </a>
+    </article>
 
-  <article id="topbillede">
-    <img src="images/frydenfacade.png" alt="frydenfacade">
-  </article>
+    <article id="topbillede">
+      <img src="images/frydenfacade.png" alt="frydenfacade">
+    </article>
 
   </section>
 
 
-  <!-- Banner 2 - info om Fryden og Cecilie -->
-<section id="intro">
-<div class="column-1">
-  <h1 data-aos="zoom" data-aos-duration="1500"> Hyggelig stemning i hjertet af Aarhus </h1>
-<img src="images/cecilie3.png" alt="Cecilie ejer af Fryden Kaffebar, laver en kaffe" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
-</div>
-<div class="column-2">
-  <h1 data-aos="zoom" data-aos-duration="1500">Hyggelig stemning i hjertet af Aarhus</h1>
-  <p> Velkommen til Fryden Kaffebar!
-Jeg hedder Cecilie og det er mig, som driver Fryden til daglig.
-Fryden er en ny kaffebar, som ligger på Mejlgade i hjertet af Aarhus.
-<br>
-<br>
-Jeg er passioneret omkring kaffe og sørger altid for, at kvaliteten er i top.
-Det er virkelig vigtigt for mig, at alle føler sig velkommen og har lyst til
-at hænge ud og hygge sig i caféen.  Vi ses hernede!</p>
-</div>
-</section>
+  <!-- Michella: Banner 2 - info om Fryden og Cecilie -->
+  <section id="intro">
+    <div class="column-1">
+      <h1 data-aos="zoom" data-aos-duration="1500"> Hyggelig stemning i hjertet af Aarhus </h1>
+      <img src="images/cecilie3.png" alt="Cecilie ejer af Fryden Kaffebar, laver en kaffe" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+    </div>
+    <div class="column-2">
+      <h1 data-aos="zoom" data-aos-duration="1500">Hyggelig stemning i hjertet af Aarhus</h1>
+      <p> Velkommen til Fryden Kaffebar!
+        Jeg hedder Cecilie og det er mig, som driver Fryden til daglig.
+        Fryden er en ny kaffebar, som ligger på Mejlgade i hjertet af Aarhus.
+        <br>
+        <br>
+        Jeg er passioneret omkring kaffe og sørger altid for, at kvaliteten er i top.
+        Det er virkelig vigtigt for mig, at alle føler sig velkommen og har lyst til
+        at hænge ud og hygge sig i caféen. Vi ses hernede!
+      </p>
+    </div>
+  </section>
 
 
-  <!-- Banner 3: Sektion om kaffe og kvalitet -->
+  <!-- Michella: Banner 3 - Sektion om kaffe og kvalitet -->
   <section id="kaffe-kvalitet">
     <h4> KAFFE </h4>
     <div id="tobilleder-flex">
-    <h1 data-aos="zoom" data-aos-duration="1500"> Kaffe af god kvalitet</h1>
-    <img id="kaffebillede1" src="images/kaffebønner.jpg" alt="Kaffebønner" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1500">
-    <img id="kaffebillede2" src="images/kaffeisol.jpg" alt="Kaffebønner" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1500">
-  </div>
-  <div id="tekst-flex">
-    <h1 data-aos="zoom" data-aos-duration="1500"> Kaffe af god kvalitet</h1>
-    <p> Hos Fryden Kaffebar bruger vi udelukkede bønner fra det lokale Frederiksbjerg-risteri
-  Mood Coffee Roasters.
-  <br>
-  I samarbejde med dem har jeg prøvesmagt og udvalgt de helt rigtige bønner til
-  den kaffeoplevelse, jeg vil give dig. Kaffen hos Fryd er altså langt fra tilfældig. </p>
-  </div>
-  </section>
-
-
-  <!-- Annica. Banner 4: togo kop -->
-  <section id="togokopbanner">
-  <div class="togokop">
-    <h1 data-aos="zoom" data-aos-duration="1500">Fryden to go kaffekop</h1>
-
-    <div class="togokopmobil">
-      <video autoplay muted loop
-       src="images/optagelse.mov">
-     </video>
+      <h1 data-aos="zoom" data-aos-duration="1500"> Kaffe af god kvalitet</h1>
+      <img id="kaffebillede1" src="images/kaffebønner.jpg" alt="Kaffebønner" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1500">
+      <img id="kaffebillede2" src="images/kaffeisol.jpg" alt="Kaffebønner" data-aos="fade-up" data-aos-delay="20" data-aos-duration="1500">
     </div>
-    <p>Hos fryden kan du købe denne to go kop.
-Når du køber denne kop, får du 10% på kaffe, hver
-gang du bruger den hos Fryden Kaffebar.
-Koppen er lavet i genanvendt plastik og har et
-låg i bæredygtigt træ. Koppen bliver fremstillet hos
-et firma her i Aarhus, hvilket gør processen mere
-miljøvenlig.</p>
-<p>Se vores andre produkter <a href="produkter.html">her</a>. Alle produkterne
-kan købes inde i kaffebaren på Mejlgade 40.</p>
-</div>
-
-<div class="togokopcom">
-  <video autoplay muted loop
-   src="images/optagelse.mov">
- </video>
-</div>
+    <div id="tekst-flex">
+      <h1 data-aos="zoom" data-aos-duration="1500"> Kaffe af god kvalitet</h1>
+      <p> Hos Fryden Kaffebar bruger vi udelukkede bønner fra det lokale Frederiksbjerg-risteri
+        Mood Coffee Roasters.
+        <br>
+        I samarbejde med dem har jeg prøvesmagt og udvalgt de helt rigtige bønner til
+        den kaffeoplevelse, jeg vil give dig. Kaffen hos Fryd er altså langt fra tilfældig.
+      </p>
+    </div>
   </section>
 
+  <!-- Annica: Banner 4 - togo kop -->
+  <section id="togokopbanner">
+    <div class="togokop">
+      <h1 data-aos="zoom" data-aos-duration="1500">Fryden to go kaffekop</h1>
 
-<!-- Banner 5: Sektion om instagram konkurrence -->
-  <section id="banner5">
-      <h1 data-aos="zoom" data-aos-duration="1500">Konkurrence på instagram</h1>
-            <p>Vind et gavekort på 5 kopper kaffe fra vores kaffekort af valgfri ønske. </p>
-      <div class="banner5kop"><img src="images/banner5kopXX.png" alt="Logo kop som baggrund"></div>
-      <h2> Deltag i konkurrencen på instagram. <br>For at deltage i konkurrencen skal du:</h2>
-
-
-      <div class="banner5krav">
-        <a class="krav1"><img src="images/banner5kop2.png" alt="Fryden kop">Tag et billede af din kaffe og fortæl os hvor du nyder kaffen henne.</a><br>
-        <a class="krav2"><img src="images/banner5kop2.png" alt="Fryden kop">Læg et kaffebillede op og hastag os med #frydtilganen</a><br>
-        <a class="krav3"><img src="images/banner5kop2.png" alt="Fryden kop">Følg os på Instagram frydenkaffebar</a><br>
+      <div class="togokopmobil">
+        <video autoplay muted loop src="images/optagelse.mov">
+        </video>
       </div>
+      <p>Hos fryden kan du købe denne to go kop.
+        Når du køber denne kop, får du 10% på kaffe, hver
+        gang du bruger den hos Fryden Kaffebar.
+        Koppen er lavet i genanvendt plastik og har et
+        låg i bæredygtigt træ. Koppen bliver fremstillet hos
+        et firma her i Aarhus, hvilket gør processen mere
+        miljøvenlig.</p>
+      <p>Se vores andre produkter <a href="produkter.html">her</a>. Alle produkterne
+        kan købes inde i kaffebaren på Mejlgade 40.</p>
+    </div>
+
+    <div class="togokopcom">
+      <video autoplay muted loop src="images/optagelse.mov">
+      </video>
+    </div>
+  </section>
+
+
+  <!-- Freja: Banner 5 - Sektion om instagram konkurrence -->
+  <section id="banner5">
+    <h1 data-aos="zoom" data-aos-duration="1500">Konkurrence på instagram</h1>
+    <p>Vind et gavekort på 5 kopper kaffe fra vores kaffekort af valgfri ønske. </p>
+    <div class="banner5mobil"><img src="images/banner5kop.png" alt="Logo kop som baggrund"></div>
+    <div class="banner5laptop"><img src="images/banner5koplaptop.png" alt="Logo kop som baggrund"></div>
+    <h2 id="banner5koptop"> Deltag i konkurrencen på instagram. <br>For at deltage i konkurrencen skal du:</h2>
+
+
+    <ul class="banner5krav">
+      <li class="kravinstagram">Tag et billede af din kaffe og fortæl os, hvor du nyder kaffen henne. </li>
+      <li class="kravinstagram">Læg et kaffebillede op og hastag os med #frydtilganen </li>
+      <li class="kravinstagram">Følg os på Instagram @frydenkaffebar</li>
+    </ul>
+
+    <p><br>Jeg trækker en vinder fredag d. 1 juli 2022 kl 10.00 <br> Vinderen får besked over Instagram og jeg tagger vinderen i en story på fryden </p>
 
   </section>
 
 
-
-  <!-- Annica. Banner 6: nyeste posts -->
+  <!-- Annica: Banner 6 - nyeste posts -->
   <section id="nyesteposts">
     <h1 data-aos="zoom" data-aos-duration="1500">Nyeste posts</h1>
     <p>Følg med på <a href="https://www.instagram.com/frydeksamen/">Instagram</a>, hvor jeg poster fra min hverdag og hele tiden kommer med opdateringer om
-  hvad end der forgår i Fryden Kaffebar.  </p>
+      hvad end der forgår i Fryden Kaffebar. </p>
 
-  <div class="nyesteinsta">
-    <article class="instabillede">
-      <img src="images/insta1.png" alt="insta1" data-aos="fade-in" data-aos-delay="50">
-    </article>
-    <article class="instabillede">
-      <img src="images/insta2.JPG" alt="insta2" data-aos="fade-in" data-aos-delay="100">
-    </article>
-  </div>
+    <div class="nyesteinsta">
+      <article class="instabillede">
+        <img src="images/insta1.png" alt="insta1" data-aos="fade-in" data-aos-delay="50">
+      </article>
+      <article class="instabillede">
+        <img src="images/insta2.JPG" alt="insta2" data-aos="fade-in" data-aos-delay="100">
+      </article>
+    </div>
 
-  <div class="nyesteinsta">
-  <article class="instabillede">
-    <img src="images/insta3.png" alt="insta3" data-aos="fade-in" data-aos-delay="150">
-  </article>
-  <article class="instabillede">
-    <img src="images/insta4.JPG" alt="insta4" data-aos="fade-in" data-aos-delay="200">
-  </article>
-  </div>
+    <div class="nyesteinsta">
+      <article class="instabillede">
+        <img src="images/insta3.png" alt="insta3" data-aos="fade-in" data-aos-delay="150">
+      </article>
+      <article class="instabillede">
+        <img src="images/insta4.JPG" alt="insta4" data-aos="fade-in" data-aos-delay="200">
+      </article>
+    </div>
 
-  <div class="instacommi">
-    <article class="instabillede">
-      <img src="images/insta1.png" alt="insta1" data-aos="fade-in" data-aos-delay="50">
-    </article>
-    <article class="instabillede">
-      <img src="images/insta2.JPG" alt="insta2" data-aos="fade-in" data-aos-delay="100">
-    </article>
-  <article class="instabillede">
-    <img src="images/insta3.png" alt="insta3" data-aos="fade-in" data-aos-delay="150">
-  </article>
-  <article class="instabillede">
-    <img src="images/insta4.JPG" alt="insta4" data-aos="fade-in" data-aos-delay="200">
-  </article>
-  </div>
+    <div class="instacommi">
+      <article class="instabillede">
+        <img src="images/insta1.png" alt="insta1" data-aos="fade-in" data-aos-delay="50">
+      </article>
+      <article class="instabillede">
+        <img src="images/insta2.JPG" alt="insta2" data-aos="fade-in" data-aos-delay="100">
+      </article>
+      <article class="instabillede">
+        <img src="images/insta3.png" alt="insta3" data-aos="fade-in" data-aos-delay="150">
+      </article>
+      <article class="instabillede">
+        <img src="images/insta4.JPG" alt="insta4" data-aos="fade-in" data-aos-delay="200">
+      </article>
+    </div>
 
   </section>
 
 
 
-  <!-- Footer -->
+  <!-- Michella: Footer -->
   <!-- Footer SOME ikoner -->
   <footer>
     <div id="rundcirkel">
       <img src="images/lokalcirkel-03.png" class="rotate" width="200" alt="lokalcirkel">
     </div>
 
-   <!-- Footer kontaktinfo og Om os - flexbox -->
-   <div class="flex-container-footer">
-       <div class="flex-kontakt">
-         <h2> Kontaktinformation </h2>
-         <p class="footerp"> Mejlgade 40, 8000 Aarhus </p>
-         <p class="footerp"> Tlf.: 20556720 </p>
-         <p class="footerp"> Mail: frydenkaffe@mail.dk </p>
-       </div>
-       <div class="flex-tider">
-         <h2> Åbningstider </h2>
-         <p class="footerp">Mandag - fredag: 9.00 -17.00</p>
-         <p class="footerp">Lørdag: 10.00 - 17.00 </p>
-         <p class="footerp">Søndag: lukket (Cecilies fridag ❤) </p>
-       </div>
-       <div class="flex-some">
-      <h2> Sociale medier </h2>
-      <a href="404.html"><img src="images/facebook.png" alt="ikoner"></a>
-      <a href="https://www.instagram.com/frydeksamen/"><img src="images/instagram.png" alt="ikoner"></a>
-      <a href="https://www.tiktok.com/@frydeneksamen"><img src="images/tiktok.png" alt="ikoner"></a>
+    <!-- Footer kontaktinfo og Om os - flexbox -->
+    <div class="flex-container-footer">
+      <div class="flex-kontakt">
+        <h2> Kontaktinformation </h2>
+        <p class="footerp"> Mejlgade 40, 8000 Aarhus </p>
+        <p class="footerp"> Tlf.: 20556720 </p>
+        <p class="footerp"> Mail: frydenkaffe@mail.dk </p>
+      </div>
+      <div class="flex-tider">
+        <h2> Åbningstider </h2>
+        <p class="footerp">Mandag - fredag: 9.00 -17.00</p>
+        <p class="footerp">Lørdag: 10.00 - 17.00 </p>
+        <p class="footerp">Søndag: lukket (Cecilies fridag ❤) </p>
+      </div>
+      <div class="flex-some">
+        <h2> Sociale medier </h2>
+        <a href="404.html"><img src="images/facebook.png" alt="ikoner"></a>
+        <a href="https://www.instagram.com/frydeksamen/"><img src="images/instagram.png" alt="ikoner"></a>
+        <a href="https://www.tiktok.com/@frydeneksamen"><img src="images/tiktok.png" alt="ikoner"></a>
+      </div>
     </div>
-     </div>
 
-     <!-- banner nederst - Fryden Kaffebar © 2022 -->
-     <div class="footer-banner">
-     <p class="bannerp"> Fryden Kaffebar  © 2022 </p>
-     </div>
-   </footer>
+    <!-- banner nederst - Fryden Kaffebar © 2022 -->
+    <div class="footer-banner">
+      <p class="bannerp"> Fryden Kaffebar © 2022 </p>
+    </div>
+  </footer>
 
 
-<!--eget js -->
-<script src="js/js.js"></script>
+  <!--Link til vores eget js -->
+  <script src="js/js.js"></script>
 
-<!-- AOS library-->
+  <!-- AOS library-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
